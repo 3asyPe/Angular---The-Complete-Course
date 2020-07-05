@@ -19,9 +19,9 @@
 
       <p *ngIf="showPassword">Secret Password = tuna</p>
 
-      <div *ngFor="let log of logs">
+      <div *ngFor="let log of logs; let i = index">
         <div [ngStyle]="{backgroundColor: getBackgroundColor(log)}"
-             [ngClass]="{whiteLog: log >= 5}">
+             [ngClass]="{whiteLog: i >= 4}">
           {{log}}
         </div>
       </div>
