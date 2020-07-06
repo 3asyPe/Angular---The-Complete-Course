@@ -23,7 +23,6 @@ export class ServerElementComponent implements OnInit, AfterContentInit {
 
   ngAfterContentInit(){
     console.log("ngOnAfterContentInit");
-    console.log("Text Content: " + this.header.nativeElement.textContent);
     console.log("Text Content of paragraph: " + this.paragraph.nativeElement.textContent);
   }
 
