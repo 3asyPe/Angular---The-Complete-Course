@@ -18,7 +18,7 @@ export class GameControlComponent implements OnInit {
 
   startGame(){
     if(this.timer){
-      clearInterval(this.timer);
+      this.stopGame();
     }
     this.timer = setInterval(() => {
       this.number = this.number + 1;
